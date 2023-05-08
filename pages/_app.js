@@ -6,7 +6,9 @@ import LoadingBar from 'react-top-loading-bar';
 
 
 function MyApp({ Component, pageProps }) {
+
   const [user, setUser] = useState({ value: null });
+  const [key, setKey] = useState();
   const [progress, setProgress] = useState(0);
   const router = useRouter();
 
